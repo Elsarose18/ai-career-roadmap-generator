@@ -45,13 +45,6 @@ Provide:
 
 # Skills To Learn
 
-# Recommended Courses
-
-# Recommended Projects
-
-# Weekly Study Schedule
-
-
 # Expected Outcome
 
 Format professionally using headings and bullet points.
@@ -70,7 +63,7 @@ Format professionally using headings and bullet points.
                 }
             ],
             temperature=0.7,
-            max_tokens=4000
+            max_tokens=5000
         )
 
         roadmap_text = response.choices[0].message.content
