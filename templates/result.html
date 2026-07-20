@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Roadmap</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Your Learning Roadmap</h1>
+
+    <div class="roadmap">
+        {{ roadmap|safe }}
+    </div>
+
+    <br>
+
+    <a class="back-btn" href="/">
+        Generate Another Roadmap
+    </a>
+
+</div>
+
+</body>
+</html>

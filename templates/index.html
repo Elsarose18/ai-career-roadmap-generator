@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Learning Roadmap Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>AI Learning Roadmap Generator</h1>
+
+    <form action="/generate" method="POST">
+
+        <label>Career Goal</label>
+        <input
+            type="text"
+            name="career_goal"
+            placeholder="AIML Engineer"
+            required
+        >
+
+        <label>Current Level</label>
+        <select name="level">
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+        </select>
+
+        <label>Study Hours Per Week</label>
+        <input
+            type="number"
+            name="hours"
+            placeholder="10"
+            required
+        >
+
+        <label>Roadmap Duration</label>
+        <select name="duration">
+            <option>3 Months</option>
+            <option>6 Months</option>
+            <option>1 Year</option>
+        </select>
+
+        <button type="submit">
+            Generate Roadmap
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
