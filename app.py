@@ -47,15 +47,10 @@ Provide:
 
 # Recommended Courses
 
-# Recommended Certifications
-
 # Recommended Projects
 
 # Weekly Study Schedule
 
-# Career Tips
-
-# Interview Preparation Tips
 
 # Expected Outcome
 
@@ -75,7 +70,7 @@ Format professionally using headings and bullet points.
                 }
             ],
             temperature=0.7,
-            max_tokens=1800
+            max_tokens=4000
         )
 
         roadmap_text = response.choices[0].message.content
