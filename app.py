@@ -30,21 +30,28 @@ def generate():
         prompt = f"""
 You are an expert career mentor.
 
-Create a learning roadmap.
+Create a concise learning roadmap.
 
 Career Goal: {career_goal}
 Current Skill Level: {level}
 Study Hours Per Week: {hours}
 Duration: {duration}
 
-Provide only:
+Provide:
 
-1. Overview
-2. Month-by-Month Learning Plan
+OVERVIEW
+- Briefly explain the learning journey in 3-4 sentences.
 
-Make the roadmap detailed, practical, and easy to follow.
+MONTH-BY-MONTH PLAN
+- For each month, mention:
+  - Main topics to study
+  - Key skills to learn
+  - One small project or practice task
 
-Do not include certifications, projects, interview tips, courses, career tips, or weekly schedules.
+Keep each month within 3-4 bullet points.
+Use simple language.
+Keep the entire roadmap under 500 words.
+Do not include certifications, courses, interview tips, career tips, or weekly schedules.
 """
 
         response = client.chat.completions.create(
