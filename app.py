@@ -28,26 +28,23 @@ def generate():
         duration = request.form["duration"]
 
         prompt = f"""
-You are an expert career mentor and AI learning advisor.
+You are an expert career mentor.
 
-Create a detailed learning roadmap.
+Create a learning roadmap.
 
 Career Goal: {career_goal}
 Current Skill Level: {level}
 Study Hours Per Week: {hours}
-Roadmap Duration: {duration}
+Duration: {duration}
 
-Provide:
+Provide only:
 
-# Overview
+1. Overview
+2. Month-by-Month Learning Plan
 
-# Month-by-Month Roadmap
+Make the roadmap detailed, practical, and easy to follow.
 
-# Skills To Learn
-
-# Expected Outcome
-
-Format professionally using headings and bullet points.
+Do not include certifications, projects, interview tips, courses, career tips, or weekly schedules.
 """
 
         response = client.chat.completions.create(
