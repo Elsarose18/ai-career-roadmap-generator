@@ -39,16 +39,13 @@ Duration: {duration}
 
 Provide:
 
-OVERVIEW
-- Briefly explain the learning journey in 3-4 sentences.
-
 MONTH-BY-MONTH PLAN
 - For each month, mention:
   - Main topics to study
   - Key skills to learn
-  - One small project or practice task
+  - One small project 
 
-Keep each month within 3-4 bullet points.
+Keep each month within 3 bullet points.
 Use simple language.
 Keep the entire roadmap under 500 words.
 Do not include certifications, courses, interview tips, career tips, or weekly schedules.
@@ -67,7 +64,7 @@ Do not include certifications, courses, interview tips, career tips, or weekly s
                 }
             ],
             temperature=0.7,
-            max_tokens=5000
+            max_tokens=10000
         )
 
         roadmap_text = response.choices[0].message.content
